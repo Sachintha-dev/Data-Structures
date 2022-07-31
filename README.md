@@ -19,3 +19,23 @@ Implementing the data structures using java
   <li>Removing element (Begining of the array) : O(n)</li>
 </ol>
 </p>
+
+## Linkde list<hr>
+We used the Linked list to stored data in sequential order but unlike array Linked list can grow and shrink automatically. Linked list consist group of node sequence each node hold two pieces of data ;
+- Value
+- Address of the next node in to the list 
+
+Each node reference the next node that's why we refer the structure as linked list because these nodes are link together
+we call first node ass head and last node as tail.
+Nodes are the link list are can be all over the memory they may not be exactly next after each other that's why we each node need to keep reference next to each node
+
+|  |At the Begin   |At the middle |At the end   
+| ------------ | ------------ | ------------ | ------------
+| Lookup  |   |   |   |
+| Run time complexity  |   |   | O(n)|
+| Insert  |We create a new node and link it in to the next node & head pointed to the new node   |Firstly we have to find the relevant node that is a O(n) Operation(Trevers the list) and then insert new node and reference it   | We simply create a new node & Tails is pointed to the new node. We should reference to the last node in somewhere, so we can not traverse the list every time  |  
+|  Run time complexity  |O(1)   |O(n)   |  O(1)| 
+|Delete  | We simply set the previous head to the next node now. We should remove the link from the previous head so it doesn't reference the second node any more we shouldn't to do that javas' garbage collector assume that is used object therefore it will not be removed by the garbage collector  | We find the before node that we removed node, we treverse the list and find node and node before relevant node we should link previous node and node after node and remove link the node|  We would find the node that before last node and tail is pointed to that node and reference set to be a null. If we find to the before last node we should traverse the list. |    
+| Run time complexity  |O(1)   |O(n)   | O(n)| | 
+
+
