@@ -39,4 +39,16 @@ Nodes are the link list are can be all over the memory they may not be exactly n
 |Delete  | Simply set the previous head to the next node now. We should remove the link from the previous head so it doesn't reference the second node any more we shouldn't to do that javas' garbage collector assume that is used object therefore it will not be removed by the garbage collector  | Find the before node that we removed node, we treverse the list and find node and node before relevant node we should link previous node and node after node and remove link the node|  Find the node that before last node and tail is pointed to that node and reference set to be a null. If we find to the before last node we should traverse the list. |    
 | Run time complexity  |O(1)   |O(n)   | O(n)| | 
 
+## Stack<hr>
 
+Best way to understand the stack think of a stack of a book we can store the bunch of book top of each, but we can only view or remove the top book. If we want to the bottom book we need to remove the book one by one. This what we call Last In First Out (LIFO) principle
+
+Stack is more powerful data structure it will help us to implementing the undo feature in application, Building Compiler, Evaluvate arithmetic expression and build the navigation feature in application
+Internally we use array or linked list to store object in stack.
+Stack is basically wrapper arround the array or linked list the giving use to different way of storing or accessing data
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210716162942/stack-660x345.png" alt="Stack">
+
+- push () - Add item top of the stack - O(1)
+- pop () - Remove item top of the stack - O(1)
+- peek () - Return item top of the stack without removing the item from stack - O(1)
+- isEmpty() - Return the stack is empty or not - O(1)
