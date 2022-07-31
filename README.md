@@ -28,6 +28,7 @@ We used the Linked list to stored data in sequential order but unlike array Link
 Each node reference the next node that's why we refer the structure as linked list because these nodes are link together
 we call first node ass head and last node as tail.
 Nodes are the link list are can be all over the memory they may not be exactly next after each other that's why we each node need to keep reference next to each node
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png" alt="Linked list">
 
 |  |At the Begin   |At the middle |At the end   
 | ------------ | ------------ | ------------ | ------------
